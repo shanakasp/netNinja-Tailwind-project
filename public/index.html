@@ -15,7 +15,7 @@
       <div>
         <nav>
           <div
-            class="text-blue-500 text-9xl font-bold p-4 border-4 border-red-200"
+            class="text-blue-500 text-9xl sm:text-red-500 lg:text-green-500 font-bold p-4 border-4 border-red-200"
           >
             <h1>
               <a href="/">Food </a>
@@ -28,7 +28,7 @@
             <li class="bg-red-400">
               <a href="#"
                 ><span class="text-4xl text-purple-800 font-bold">
-                  About-Us</span
+                  About</span
                 ></a
               >
             </li>
@@ -48,7 +48,9 @@
       </div>
 
       <main>
-        <div class="flex justify-end text-xl p-4 text-indigo-800">
+        <div
+          class="flex justify-center text-xl p-4 text-indigo-800 md:justify-end"
+        >
           <a href="a">Log In</a>
           <a href="a" class="ml-2">Sign Up</a>
         </div>
@@ -58,21 +60,81 @@
           <h3>For all users</h3>
         </header>
 
-        <div>
-          <h4>Latest Recipes</h4>
-          <div>
+        <h4>Latest Recipes</h4>
+        <div class="grid lg:grid-cols-3 gap-1">
+          <div
+            class="bg-red-100 rounded overflow-hidden shadow-lg m-5 relative"
+          >
             <div>
-              <img src="./img/img1.jpg" alt="image" />
-              <div><span>Chicken Kottu </span> <span>Done By Us </span></div>
+              <img
+                src="img/img1.jpg"
+                alt="image"
+                class="w-full h-32 md:h-48 object-cover"
+              />
+              <div class="p-3">
+                <span class="font-bold text-2xl text-black"
+                  >Chicken Kottu
+                </span>
+                <span class="block">Done By Us </span>
+              </div>
+              <div
+                class="bg-gray-200 p-3 text-xs uppercase font-sans rounded-full absolute top-0 m-2"
+              >
+                <span>25 min</span>
+              </div>
             </div>
           </div>
 
-          <h4>Most Popular recipes</h4>
-          <div><!--cart--></div>
-
-          <div>
-            <div>Load more</div>
+          <div
+            class="bg-red-100 rounded overflow-hidden shadow-lg m-5 relative"
+          >
+            <div>
+              <img
+                src="img/img1.jpg"
+                alt="image"
+                class="w-full h-32 md:h-48 object-cover"
+              />
+              <div class="p-3">
+                <span class="font-bold text-2xl text-black"
+                  >Chicken Kottu
+                </span>
+                <span class="block">Done By Us </span>
+              </div>
+              <div
+                class="bg-gray-200 p-3 text-xs uppercase font-sans rounded-full absolute top-0 m-2"
+              >
+                <span>25 min</span>
+              </div>
+            </div>
           </div>
+
+          <div
+            class="bg-red-100 rounded overflow-hidden shadow-lg m-5 relative"
+          >
+            <div>
+              <img
+                src="img/img1.jpg"
+                alt="image"
+                class="w-full h-32 md:h-48 object-cover"
+              />
+              <div class="p-3">
+                <span class="font-bold text-2xl text-black"
+                  >Chicken Kottu
+                </span>
+                <span class="block">Done By Us </span>
+              </div>
+              <div
+                class="bg-gray-200 p-3 text-xs uppercase font-sans rounded-full absolute top-0 m-2"
+              >
+                <span>25 min</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <h4>Most Popular recipes</h4>
+        <div><!--cart--></div>
+        <div>
+          <div>Load more</div>
         </div>
       </main>
     </div>

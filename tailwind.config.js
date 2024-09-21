@@ -2,6 +2,7 @@
 module.exports = {
   content: [],
   presets: [],
+  plugins: [require("tailwindcss"), require("autoprefixer")],
   darkMode: "media", // or 'class'
   theme: {
     accentColor: ({ theme }) => ({

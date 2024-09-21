@@ -4,10 +4,28 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Custom Tailwind utility classes */
+
 .card {
-  @apply bg-red-100 rounded overflow-hidden shadow-lg m-5 relative;
+  @apply relative bg-white rounded-lg shadow-lg overflow-hidden transition-transform transform hover:scale-105;
+}
+
+.card-image {
+  @apply w-full h-32 md:h-48 object-cover;
+}
+
+.card-content {
+  @apply p-3;
+}
+
+.card-title {
+  @apply font-bold text-2xl text-black;
+}
+
+.card-subtitle {
+  @apply block text-gray-600;
 }
 
 .badge {
-  @apply bg-gray-200 p-3 text-xs uppercase font-sans rounded-full absolute top-0 m-2;
+  @apply absolute top-0 right-0 bg-gray-200 p-2 text-xs uppercase rounded-full m-2;
 }
